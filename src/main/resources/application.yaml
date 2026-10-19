@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ChatBot
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3.2
+        options:
+          temperature: 0.7
+  mongodb:
+    uri: mongodb://localhost:27017/support_chatbot_db
+
+server:
+  port: 8080
